@@ -75,7 +75,6 @@ export const metadata: Metadata = {
     description:
       "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London.",
     images: ["/opengraph-image.png"],
-    creator: "@samueljforrest",
   },
   robots: {
     index: true,
