@@ -21,11 +21,12 @@ export const metadata: Metadata = {
   },
   description:
     "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur building Tradelingo and Sitro.",
-  authors: [{ name: "Samuel Forrest", url: "https://www.samuelforrest.me" }],
+  authors: [{ name: "Samuel Forrest", url: "https://www.samuelforrest.co.uk" }],
   creator: "Samuel Forrest",
   publisher: "Samuel Forrest",
   keywords: [
     "Samuel Forrest",
+    "samuelforrest.co.uk",
     "samuelforrest.me",
     "Software Engineer",
     "Computer Science Student",
@@ -46,7 +47,7 @@ export const metadata: Metadata = {
     "Amazon",
     "Virgin Atlantic",
   ],
-  metadataBase: new URL("https://www.samuelforrest.me"),
+  metadataBase: new URL("https://www.samuelforrest.co.uk"),
   alternates: {
     canonical: "/",
   },
@@ -56,7 +57,7 @@ export const metadata: Metadata = {
     title: "Samuel Forrest | Software Engineer & A-Level Student",
     description:
       "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
-    url: "https://www.samuelforrest.me",
+    url: "https://www.samuelforrest.co.uk",
     siteName: "Samuel Forrest Portfolio",
     images: [
       {
@@ -121,9 +122,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Person",
               name: "Samuel Forrest",
-              url: "https://www.samuelforrest.me",
+              url: "https://www.samuelforrest.co.uk",
               image:
-                "https://www.samuelforrest.me/samuel-forrest-october-2025.webp",
+                "https://www.samuelforrest.co.uk/samuel-forrest-october-2025.webp",
               jobTitle: "Software Engineer & A-Level Student",
               description:
                 "17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London",

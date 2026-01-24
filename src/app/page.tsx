@@ -449,6 +449,15 @@ export default function Personal() {
           Feel free to contact me at{" "}
           <a
             className="underline underline-offset-3 dark:text-zinc-300"
+            href="mailto:sam@samuelforrest.co.uk"
+          >
+            sam@samuelforrest.co.uk
+          </a>
+        </p>
+        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
+          My previous email is still active for a limited period{" "}
+          <a
+            className="underline underline-offset-3 dark:text-zinc-300"
             href="mailto:sam@samuelforrest.me"
           >
             sam@samuelforrest.me
