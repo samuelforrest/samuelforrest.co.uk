@@ -320,7 +320,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: "Book call",
-    link: "https://app.cal.eu/samueljforrest",
+    link: "https://calendar.app.google/UGF12VGCT4zaFQFDA",
   },
   {
     label: "Forrest Studio",
