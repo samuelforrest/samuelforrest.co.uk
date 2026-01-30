@@ -11,16 +11,19 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ffffff",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#000000" },
+  ],
 };
 
 export const metadata: Metadata = {
   title: {
-    default: "Samuel Forrest",
-    template: "Samuel Forrest",
+    default: "Samuel Forrest | Software Engineer & A-Level Student",
+    template: "%s | Samuel Forrest",
   },
   description:
-    "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur building Tradelingo and Sitro.",
+    "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
   authors: [{ name: "Samuel Forrest", url: "https://www.samuelforrest.co.uk" }],
   creator: "Samuel Forrest",
   publisher: "Samuel Forrest",
@@ -61,11 +64,10 @@ export const metadata: Metadata = {
     siteName: "Samuel Forrest Portfolio",
     images: [
       {
-        url: "/opengraph-image.png",
+        url: "/samuelforrest.JPG",
         width: 1200,
         height: 630,
         alt: "Samuel Forrest - Software Engineer & A-Level Student",
-        type: "image/png",
       },
     ],
   },
@@ -74,7 +76,7 @@ export const metadata: Metadata = {
     title: "Samuel Forrest | Software Engineer & A-Level Student",
     description:
       "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London.",
-    images: ["/opengraph-image.png"],
+    images: ["/samuelforrest.JPG"],
   },
   robots: {
     index: true,
@@ -111,8 +113,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#000000" />
+        <link rel="canonical" href="https://www.samuelforrest.co.uk" />
         <meta name="color-scheme" content="light dark" />
         <script
           type="application/ld+json"
