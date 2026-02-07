@@ -44,6 +44,8 @@ export default function Personal() {
   const [showMoreWork, setShowMoreWork] = useState(false);
   const [showMoreProjects, setShowMoreProjects] = useState(false);
   const [showMoreEducation, setShowMoreEducation] = useState(false);
+  const [showPrimaryEmail, setShowPrimaryEmail] = useState(false);
+  const [showSecondaryEmail, setShowSecondaryEmail] = useState(false);
 
   const displayedWorkExperience = showMoreWork
     ? WORK_EXPERIENCE
@@ -447,21 +449,41 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to contact me at{" "}
-          <a
-            className="underline underline-offset-3 dark:text-zinc-300"
-            href="mailto:sam@samuelforrest.co.uk"
-          >
-            sam@samuelforrest.co.uk
-          </a>
+          {showPrimaryEmail ? (
+            <a
+              className="underline underline-offset-3 dark:text-zinc-300"
+              href="mailto:sam@samuelforrest.co.uk"
+            >
+              sam@samuelforrest.co.uk
+            </a>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setShowPrimaryEmail(true)}
+              className="underline underline-offset-3 dark:text-zinc-300"
+            >
+              Reveal
+            </button>
+          )}
         </p>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           My previous email is still active for a limited period{" "}
-          <a
-            className="underline underline-offset-3 dark:text-zinc-300"
-            href="mailto:sam@samuelforrest.me"
-          >
-            sam@samuelforrest.me
-          </a>
+          {showSecondaryEmail ? (
+            <a
+              className="underline underline-offset-3 dark:text-zinc-300"
+              href="mailto:sam@samuelforrest.me"
+            >
+              sam@samuelforrest.me
+            </a>
+          ) : (
+            <button
+              type="button"
+              onClick={() => setShowSecondaryEmail(true)}
+              className="underline underline-offset-3 dark:text-zinc-300"
+            >
+              Reveal
+            </button>
+          )}
         </p>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to message me on&nbsp;
