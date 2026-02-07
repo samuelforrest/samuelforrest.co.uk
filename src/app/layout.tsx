@@ -19,8 +19,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Samuel Forrest | Software Engineer & A-Level Student",
-    template: "%s | Samuel Forrest",
+    default: "Samuel Forrest",
   },
   description:
     "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
@@ -57,23 +56,23 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    title: "Samuel Forrest | Software Engineer & A-Level Student",
+    title: "Samuel Forrest",
     description:
       "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
     url: "https://www.samuelforrest.co.uk",
-    siteName: "Samuel Forrest Portfolio",
+    siteName: "Samuel Forrest",
     images: [
       {
         url: "/samuelforrest.JPG",
         width: 1200,
         height: 630,
-        alt: "Samuel Forrest - Software Engineer & A-Level Student",
+        alt: "Samuel Forrest",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samuel Forrest | Software Engineer & A-Level Student",
+    title: "Samuel Forrest",
     description:
       "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London.",
     images: ["/samuelforrest.JPG"],
