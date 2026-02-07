@@ -462,7 +462,7 @@ export default function Personal() {
               onClick={() => setShowPrimaryEmail(true)}
               className="underline underline-offset-3 dark:text-zinc-300"
             >
-              Reveal
+              reveal email
             </button>
           )}
         </p>
@@ -481,7 +481,7 @@ export default function Personal() {
               onClick={() => setShowSecondaryEmail(true)}
               className="underline underline-offset-3 dark:text-zinc-300"
             >
-              Reveal
+              reveal email
             </button>
           )}
         </p>
