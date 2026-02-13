@@ -319,12 +319,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: "https://samueljforrest.substack.com/",
   },
   {
-    label: "Book call",
-    link: "https://calendar.app.google/UGF12VGCT4zaFQFDA",
+    label: "Devpost",
+    link: "https://devpost.com/samueljforrest",
   },
   {
-    label: "Forrest Studio",
-    link: "https://www.forreststudio.co.uk/",
+    label: "Book call",
+    link: "https://calendar.app.google/UGF12VGCT4zaFQFDA",
   },
 ];
 
