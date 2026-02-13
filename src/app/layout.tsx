@@ -18,9 +18,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: {
-    default: "Samuel Forrest",
-  },
+  title: "Samuel Forrest",
   description:
     "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
   authors: [{ name: "Samuel Forrest", url: "https://www.samuelforrest.co.uk" }],
@@ -48,6 +46,7 @@ export const metadata: Metadata = {
     "British Airways",
     "Amazon",
     "Virgin Atlantic",
+    "Samuel James Forrest",
   ],
   metadataBase: new URL("https://www.samuelforrest.co.uk"),
   alternates: {
@@ -124,9 +123,9 @@ export default function RootLayout({
               url: "https://www.samuelforrest.co.uk",
               image:
                 "https://www.samuelforrest.co.uk/samuel-forrest-october-2025.webp",
-              jobTitle: "Software Engineer & A-Level Student",
+              jobTitle: "Software Developer & A-Level Student",
               description:
-                "17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London",
+                "17-year-old aspiring Software Developer studying Computer Science, Physics & Mathematics A-Levels in London",
               alumniOf: "St George's College, Weybridge",
               knowsAbout: [
                 "Software Engineering",
