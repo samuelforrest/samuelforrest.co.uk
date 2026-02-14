@@ -68,9 +68,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            A Level student passionate about modern web and application
-            development. Freelance developer at Forrest Studio, CTO at
-            Apprentadream and Private Tutor on Superprof.
+            Samuel Forrest is an A Level student passionate about modern web and
+            application development. Currently the CTO at Apprentadream, Private
+            Tutor on Superprof and a Freelance Developer.
           </p>
         </div>
         <div className="flex items-center justify-start space-x-3 pt-5">

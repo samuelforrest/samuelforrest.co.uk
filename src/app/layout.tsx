@@ -20,7 +20,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Samuel Forrest",
   description:
-    "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
+    "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
   authors: [{ name: "Samuel Forrest", url: "https://www.samuelforrest.co.uk" }],
   creator: "Samuel Forrest",
   publisher: "Samuel Forrest",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     locale: "en_GB",
     title: "Samuel Forrest",
     description:
-      "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London. Private tutor, web developer, and entrepreneur.",
+      "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
     url: "https://www.samuelforrest.co.uk",
     siteName: "Samuel Forrest",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samuel Forrest",
     description:
-      "Samuel Forrest is a 17-year-old aspiring Software Engineer studying Computer Science, Physics & Mathematics A-Levels in London.",
+      "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
     images: ["/samuelforrest.JPG"],
   },
   robots: {
@@ -125,7 +125,7 @@ export default function RootLayout({
                 "https://www.samuelforrest.co.uk/samuel-forrest-october-2025.webp",
               jobTitle: "Software Developer & A-Level Student",
               description:
-                "17-year-old aspiring Software Developer studying Computer Science, Physics & Mathematics A-Levels in London",
+                "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
               alumniOf: "St George's College, Weybridge",
               knowsAbout: [
                 "Software Engineering",
