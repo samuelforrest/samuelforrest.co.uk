@@ -44,6 +44,7 @@ export const metadata: Metadata = {
     "Amazon",
     "Virgin Atlantic",
     "Samuel James Forrest",
+    "Samuel Forrest Blog",
   ],
   metadataBase: new URL("https://www.samuelforrest.co.uk"),
   alternates: {
