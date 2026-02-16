@@ -137,7 +137,7 @@ export default function RootLayout({
                 sameAs: [
                   "https://www.linkedin.com/in/samueljforrest/",
                   "https://github.com/samuelforrest",
-                  "https://www.youtube.com/@samuelforrest",
+                  "https://www.youtube.com/@samuel-forrest",
                 ],
                 address: {
                   "@type": "Place",
