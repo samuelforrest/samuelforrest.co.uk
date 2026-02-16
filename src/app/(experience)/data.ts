@@ -1,17 +1,3 @@
-type Project = {
-  name: string;
-  description: string;
-  longDescription: string;
-  link: string;
-  image?: string;
-  id: string;
-  links?: {
-    website?: string;
-    download?: string;
-    sourceCode?: string;
-  };
-};
-
 type WorkExperience = {
   company: string;
   title: string;
@@ -30,13 +16,6 @@ type Education = {
   link: string;
   logo?: string;
   id: string;
-};
-
-type BlogPost = {
-  title: string;
-  description: string;
-  link: string;
-  uid: string;
 };
 
 type SocialLink = {
@@ -239,8 +218,28 @@ export const TECH_STACK: TechStack[] = [
     id: "tech8",
   },
   {
+    name: "ChatGPT",
+    category: "AI",
+    id: "tech9",
+  },
+  {
+    name: "Claude",
+    category: "AI",
+    id: "tech10",
+  },
+  {
+    name: "Google Workspace",
+    category: "Collaboration",
+    id: "tech11",
+  },
+  {
     name: "Figma",
     category: "Design",
-    id: "tech9",
+    id: "tech12",
+  },
+  {
+    name: "Notion",
+    category: "Documentation",
+    id: "tech13",
   },
 ];

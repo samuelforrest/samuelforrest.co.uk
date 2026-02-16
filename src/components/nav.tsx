@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { FaLinkedin, FaGithub, FaYoutube, FaGoogle } from "react-icons/fa";
-import { SOCIAL_LINKS } from "src/app/data";
+import { SOCIAL_LINKS } from "src/app/(experience)/data";
 
 const navItems = {
   "/": {

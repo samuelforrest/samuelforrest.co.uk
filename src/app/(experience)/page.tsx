@@ -2,7 +2,7 @@ import { WORK_EXPERIENCE, EDUCATION, TECH_STACK } from "./data";
 import { WorkExperienceGrid } from "src/components/work-experience-grid";
 import { EducationGrid } from "src/components/education-grid";
 import { ConnectSection } from "src/components/connect-section";
-import { baseUrl } from "./sitemap";
+import { baseUrl } from "../sitemap";
 
 export const metadata = {
   title: "Samuel Forrest",
