@@ -27,6 +27,7 @@ type TechStack = {
   name: string;
   category: string;
   id: string;
+  link: string;
 };
 
 // WORK EXPERIENCE
@@ -181,65 +182,78 @@ export const TECH_STACK: TechStack[] = [
     name: "React",
     category: "Frontend",
     id: "tech1",
+    link: "https://react.dev/",
   },
   {
     name: "Next.js",
     category: "Frontend",
     id: "tech2",
+    link: "https://nextjs.org/docs",
   },
   {
     name: "TypeScript",
     category: "Language",
     id: "tech3",
+    link: "https://www.typescriptlang.org/docs/",
   },
   {
     name: "Tailwind CSS",
     category: "Styling",
     id: "tech4",
+    link: "https://tailwindcss.com/",
   },
   {
     name: "Supabase",
     category: "Database",
     id: "tech5",
+    link: "https://supabase.com/",
   },
   {
     name: "Python",
     category: "Backend",
     id: "tech6",
+    link: "https://python.org/",
   },
   {
     name: "Vercel",
     category: "Deployment",
     id: "tech7",
+    link: "https://vercel.com/home",
   },
   {
     name: "Git & GitHub",
     category: "Tools",
     id: "tech8",
+    link: "https://github.com/",
   },
   {
     name: "ChatGPT",
     category: "AI",
     id: "tech9",
+    link: "https://openai.com/api/",
   },
   {
     name: "Claude",
     category: "AI",
     id: "tech10",
+    link: "https://claude.com/platform/api",
   },
   {
     name: "Google Workspace",
     category: "Collaboration",
     id: "tech11",
+    link: "https://workspace.google.com/",
   },
   {
     name: "Figma",
     category: "Design",
     id: "tech12",
+    link: "https://figma.com/",
   },
   {
     name: "Notion",
     category: "Documentation",
     id: "tech13",
+    link: "https://www.notion.com/",
   },
 ];

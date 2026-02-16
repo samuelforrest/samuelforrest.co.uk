@@ -65,15 +65,18 @@ export default function Personal() {
         <h3 className="mb-5 text-lg font-medium">Tech Stack</h3>
         <div className="flex flex-wrap gap-2">
           {TECH_STACK.map((tech) => (
-            <div
+            <a
               key={tech.id}
-              className="group relative inline-flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2 text-sm text-zinc-900 transition-all duration-200 hover:bg-zinc-200 hover:text-black dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
+              href={tech.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm  transition-all duration-200   bg-zinc-800 text-zinc-100 hover:bg-zinc-700 cursor-pointer"
             >
               <span className="font-medium">{tech.name}</span>
-              <span className="text-xs text-zinc-500 transition-colors group-hover:text-zinc-600 dark:text-zinc-400 dark:group-hover:text-zinc-300">
+              <span className="text-xs text-zinc-400 transition-colors group-hover:text-zinc-300">
                 {tech.category}
               </span>
-            </div>
+            </a>
           ))}
         </div>
       </section>

@@ -1,5 +1,4 @@
 "use client";
-import { TextEffect } from "src/components/ui/text-effect";
 import Link from "next/link";
 import Image from "next/image";
 import { Navbar } from "src/components/nav";
@@ -22,15 +21,7 @@ export function Header() {
           <Link href="/" className="text-2xl font-medium text-white">
             Samuel Forrest
           </Link>
-          <TextEffect
-            as="p"
-            preset="fade"
-            per="char"
-            className="text-black dark:text-white"
-            delay={0.5}
-          >
-            Student, Developer & Tutor
-          </TextEffect>
+          <p className="text-white">Student, Developer & Tutor</p>
         </div>
       </div>
     </header>
