@@ -22,7 +22,7 @@ export function Footer() {
             <FaGithub className="h-5 w-5" />
           </a>
           <a
-            href="https://www.youtube.com/@samuelforrest"
+            href="https://www.youtube.com/@samuel-forrest"
             target="_blank"
             rel="noopener noreferrer"
             className="text-red-500 hover:text-red-600 transition-colors"

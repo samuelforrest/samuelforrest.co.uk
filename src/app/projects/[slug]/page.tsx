@@ -106,7 +106,7 @@ export default async function Project({
                 sameAs: [
                   "https://github.com/samuelforrest",
                   "https://www.linkedin.com/in/samueljforrest/",
-                  "https://www.youtube.com/@samuelforrest",
+                  "https://www.youtube.com/@samuel-forrest",
                 ],
               },
               publisher: {
