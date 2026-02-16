@@ -31,17 +31,24 @@ function CustomLink(props) {
 
   if (href.startsWith("/")) {
     return (
-      <Link href={href} {...props}>
+      <Link className="underline underline-offset-3" href={href} {...props}>
         {props.children}
       </Link>
     );
   }
 
   if (href.startsWith("#")) {
-    return <a {...props} />;
+    return <a className="underline underline-offset-3" {...props} />;
   }
 
-  return <a target="_blank" rel="noopener noreferrer" {...props} />;
+  return (
+    <a
+      className="underline underline-offset-3"
+      target="_blank"
+      rel="noopener noreferrer"
+      {...props}
+    />
+  );
 }
 
 function RoundedImage(props) {

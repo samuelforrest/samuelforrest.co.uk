@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "Mathematics",
     "Physics",
     "Degree Apprenticeships",
-    "St Georges College Weybridge",
+    "St Georges Weybridge",
     "Work Experience",
     "British Airways",
     "Amazon",
@@ -123,7 +123,7 @@ export default function RootLayout({
               jobTitle: "Software Developer & A-Level Student",
               description:
                 "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
-              alumniOf: "St George's College, Weybridge",
+              alumniOf: "St George's Weybridge",
               knowsAbout: [
                 "Software Engineering",
                 "Web Development",

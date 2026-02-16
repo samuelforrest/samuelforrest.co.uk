@@ -149,7 +149,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const EDUCATION: Education[] = [
   {
-    school: "St George's College, Weybridge",
+    school: "St George's Weybridge",
     degree: "A Levels: Predicted A*A*AA",
     start: "Sep 2024",
     end: "Jul 2026",
@@ -158,7 +158,7 @@ export const EDUCATION: Education[] = [
     id: "edu1",
   },
   {
-    school: "St George's College, Weybridge",
+    school: "St George's Weybridge",
     degree: "GCSEs: 9999999987",
     start: "Sep 2021",
     end: "Jul 2024",
@@ -190,7 +190,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 
   {
-    label: "Book call",
+    label: "Book a Call",
     link: "https://calendar.app.google/UGF12VGCT4zaFQFDA",
   },
 ];

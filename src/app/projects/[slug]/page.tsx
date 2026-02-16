@@ -92,6 +92,7 @@ export default async function Project({
           }),
         }}
       />
+      <a id="top"></a>
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {project.metadata.title}
       </h1>
@@ -114,6 +115,11 @@ export default async function Project({
       <article className="prose prose-invert prose-quoteless prose-neutral">
         <CustomMDX source={project.content} />
       </article>
+      <br />
+      <br />
+      <a className="underline underline-offset-3 font-medium" href="#top">
+        Back to top
+      </a>
     </section>
   );
 }

@@ -1,44 +1,13 @@
 "use client";
 import { useState } from "react";
-import { motion } from "motion/react";
-import { XIcon, ChevronDown } from "lucide-react";
-import { Spotlight } from "src/components/ui/spotlight";
-import {
-  MorphingDialog,
-  MorphingDialogTrigger,
-  MorphingDialogContent,
-  MorphingDialogClose,
-  MorphingDialogContainer,
-} from "src/components/ui/morphing-dialog";
+import { ChevronDown } from "lucide-react";
 
-import Link from "next/link";
-import { AnimatedBackground } from "src/components/ui/animated-background";
 import { WORK_EXPERIENCE, EDUCATION, SOCIAL_LINKS, TECH_STACK } from "./data";
-
-const VARIANTS_CONTAINER = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.15,
-    },
-  },
-};
-
-const VARIANTS_SECTION = {
-  hidden: { opacity: 0, y: 20, filter: "blur(8px)" },
-  visible: { opacity: 1, y: 0, filter: "blur(0px)" },
-};
-
-const TRANSITION_SECTION = {
-  duration: 0.3,
-};
 
 export default function Personal() {
   const [showMoreWork, setShowMoreWork] = useState(false);
   const [showMoreEducation, setShowMoreEducation] = useState(false);
   const [showPrimaryEmail, setShowPrimaryEmail] = useState(false);
-  const [showSecondaryEmail, setShowSecondaryEmail] = useState(false);
 
   const displayedWorkExperience = showMoreWork
     ? WORK_EXPERIENCE
@@ -48,17 +17,12 @@ export default function Personal() {
     : EDUCATION.slice(0, 2);
 
   return (
-    <motion.main
-      className="space-y-24"
-      variants={VARIANTS_CONTAINER}
-      initial="hidden"
-      animate="visible"
-    >
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
+    <main className="space-y-24">
+      <section>
         <div className="flex-1">
+          <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
+            Experience
+          </h1>
           <p className="text-black dark:text-white">
             Samuel Forrest is an A Level student passionate about modern web and
             application development. Currently the CTO at Apprentadream, Private
@@ -92,11 +56,8 @@ export default function Personal() {
             </a>
           ))}
         </div>
-      </motion.section>
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
+      </section>
+      <section>
         <h3 className="mb-5 text-lg font-medium">Experience</h3>
         <div className="flex flex-col space-y-2">
           {displayedWorkExperience.map((job) => (
@@ -107,10 +68,6 @@ export default function Personal() {
               rel="noopener noreferrer"
               key={job.id}
             >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
               <div className="relative h-full w-full rounded-[15px] bg-white p-3 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-row items-center gap-4">
                   {job.logo && (
@@ -153,12 +110,9 @@ export default function Personal() {
             </button>
           </div>
         )}
-      </motion.section>
+      </section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
+      <section>
         <h3 className="mb-5 text-lg font-medium">Education</h3>
         <div className="flex flex-col space-y-2">
           {displayedEducation.map((edu) => (
@@ -169,10 +123,6 @@ export default function Personal() {
               rel="noopener noreferrer"
               key={edu.id}
             >
-              <Spotlight
-                className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
-                size={64}
-              />
               <div className="relative h-full w-full rounded-[15px] bg-white p-3 dark:bg-zinc-950">
                 <div className="relative flex w-full flex-row items-center gap-4">
                   {edu.logo && (
@@ -215,12 +165,9 @@ export default function Personal() {
             </button>
           </div>
         )}
-      </motion.section>
+      </section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
+      <section>
         <h3 className="mb-5 text-lg font-medium">Tech Stack</h3>
         <div className="flex flex-wrap gap-2">
           {TECH_STACK.map((tech) => (
@@ -235,12 +182,9 @@ export default function Personal() {
             </div>
           ))}
         </div>
-      </motion.section>
+      </section>
 
-      <motion.section
-        variants={VARIANTS_SECTION}
-        transition={TRANSITION_SECTION}
-      >
+      <section>
         <h3 className="mb-5 text-lg font-medium">Connect</h3>
         <p className="mb-5 text-zinc-600 dark:text-zinc-400">
           Feel free to contact me at{" "}
@@ -289,7 +233,7 @@ export default function Personal() {
             </a>
           ))}
         </div>
-      </motion.section>
-    </motion.main>
+      </section>
+    </main>
   );
 }
