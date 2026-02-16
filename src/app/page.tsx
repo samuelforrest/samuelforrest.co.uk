@@ -2,16 +2,17 @@
 import { useState } from "react";
 import { motion } from "motion/react";
 import { XIcon, ChevronDown } from "lucide-react";
-import { Spotlight } from "@/components/ui/spotlight";
+import { Spotlight } from "src/components/ui/spotlight";
 import {
   MorphingDialog,
   MorphingDialogTrigger,
   MorphingDialogContent,
   MorphingDialogClose,
   MorphingDialogContainer,
-} from "@/components/ui/morphing-dialog";
+} from "src/components/ui/morphing-dialog";
+
 import Link from "next/link";
-import { AnimatedBackground } from "@/components/ui/animated-background";
+import { AnimatedBackground } from "src/components/ui/animated-background";
 import {
   PROJECTS,
   WORK_EXPERIENCE,

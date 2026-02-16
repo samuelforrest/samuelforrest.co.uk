@@ -1,5 +1,5 @@
 "use client";
-import { TextEffect } from "@/components/ui/text-effect";
+import { TextEffect } from "src/components/ui/text-effect";
 import Link from "next/link";
 import Image from "next/image";
 
