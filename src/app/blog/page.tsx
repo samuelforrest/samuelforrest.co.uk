@@ -2,7 +2,8 @@ import { BlogPosts } from "src/components/posts";
 
 export const metadata = {
   title: "Blog | Samuel Forrest",
-  description: "Read Samuel Forrest's Blog",
+  description:
+    "Samuel Forrest's blog discussing topics such as software engineering, AI and degree apprenticeships.",
 };
 
 export default function Page() {

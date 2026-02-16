@@ -1,8 +1,9 @@
 import { ProjectsGrid } from "src/components/projects";
 
 export const metadata = {
-  title: "Projects",
-  description: "A collection of Samuel Forrest's projects",
+  title: "Projects | Samuel Forrest",
+  description:
+    "Samuel Forrest's projects ranging from client website projects to dissertations.",
 };
 
 export default function Page() {
