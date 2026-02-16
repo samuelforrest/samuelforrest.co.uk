@@ -13,6 +13,21 @@ const nextConfig = {
       },
     ],
   },
+  async headers() {
+    return [
+      {
+        // Block search engines and AI from indexing document files (not the page itself)
+        source:
+          "/documents/:filename*.:ext(pdf|doc|docx|xls|xlsx|ppt|pptx|jpg|jpeg|png|gif)",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow, noarchive, nosnippet, noimageindex",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 const withMDX = createMDX({
