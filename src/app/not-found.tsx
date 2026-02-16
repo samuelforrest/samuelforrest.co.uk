@@ -1,14 +1,17 @@
-import Link from "next/link";
+export const metadata = {
+  title: "404: Page Not Found | Samuel Forrest",
+  description: "This page could not be found.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col ">
-      <div className="flex flex-col lg:items-start text-center md:text-left">
-        <h1 className="text-6xl font-bold mb-10">404</h1>
-
-        <Link href="/" className="underline underline-offset-3">
-          Go back home
-        </Link>
+    <div className="flex flex-col mt-20 ">
+      <div className="flex flex-col text-center md:text-left">
+        <p className="text-xl mb-10 text-center">404: Page not found</p>
       </div>
     </div>
   );

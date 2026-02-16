@@ -50,105 +50,6 @@ type TechStack = {
   id: string;
 };
 
-// PROJECTS
-
-export const PROJECTS: Project[] = [
-  {
-    name: "Apprentadream",
-    description:
-      "Built a GDPR-compliant sign-up form, handing over 150 sign-ups per week.",
-    longDescription:
-      "Built a GDPR-compliant sign-up form, handing over 150 sign-ups per week.",
-    link: "",
-    image: "/apprentadream2.webp",
-    id: "project1",
-    links: {
-      website: "https://apprentadream.co.uk",
-      sourceCode: "https://github.com/samuelforrest/apprentadream.co.uk",
-    },
-  },
-  {
-    name: "Bio News Weekly",
-    description: "Developed a news website for a biology newspaper.",
-    longDescription: "Developed a news website for a biology newspaper.",
-    link: "",
-    image: "/bionewsweekly.webp",
-    id: "project2",
-    links: {
-      website: "https://bionewsweekly.com",
-    },
-  },
-  {
-    name: "Zoe Cat Care",
-    description: "Built a clean website for a local cat care business.",
-    longDescription: "Built a clean website for a local cat care business.",
-    link: "",
-    image: "/zoecc.webp",
-    id: "project3",
-    links: {
-      website: "https://zoecc.co.uk",
-    },
-  },
-  {
-    name: "EPQ Dissertation",
-    description: "I produced an EPQ on Supersonic aviation",
-    longDescription: "I produced an EPQ on Supersonic aviation",
-    link: "",
-    image: "/boom.webp",
-    id: "project4",
-    links: {
-      download: "/",
-    },
-  },
-  {
-    name: "Verda",
-    description: "My teammate and I won a £300 prize at the KTHack Hackathon",
-    longDescription:
-      "My teammate and I won a £300 prize at the KTHack Hackathon",
-    link: "",
-    image: "/verda2.webp",
-    id: "project5",
-    links: {
-      sourceCode: "https://github.com/samuelforrest/verdapp.xyz",
-    },
-  },
-  {
-    name: "Sitro.io",
-    description: "An AI Landing Page generator, to be released soon.",
-    longDescription: "An AI Landing Page generator, to be released soon.",
-    link: "",
-    image: "/sitro.webp",
-    id: "project6",
-    links: {
-      website: "https://sitro.io",
-    },
-  },
-  {
-    name: "Tradelingo",
-    description:
-      "A cross-platform stock market simulator to help teach Gen Z investing.",
-    longDescription:
-      "A cross-platform stock market simulator to help teach Gen Z investing.",
-    link: "",
-    image: "/tradelingo.webp",
-    id: "project7",
-    links: {},
-  },
-  {
-    name: "British Airways Work Experience",
-    description:
-      "Researched options for a new aircraft type for airline shorthaul fleets based in the UK",
-    longDescription:
-      "Researched options for a new aircraft type for airline shorthaul fleets based in the UK",
-    link: "",
-    image: "/e190.webp",
-    id: "project8",
-    links: {
-      download: "/",
-    },
-  },
-];
-
 // WORK EXPERIENCE
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
@@ -158,7 +59,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Sep 2025",
     end: "Present",
     link: "https://www.apprentadream.co.uk",
-    logo: "/apprentadream.webp",
+    logo: "/images/apprentadream.webp",
     id: "work1",
   },
   {
@@ -167,7 +68,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Sep 2024",
     end: "Present",
     link: "https://www.superprof.co.uk/trusted-computer-science-tutor-with-hours-experience-taught-grade-sixth-form-student-software-engineer.html",
-    logo: "/superprof.webp",
+    logo: "/images/superprof.webp",
     id: "work2",
   },
   {
@@ -176,7 +77,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Jul 2025",
     end: "Present",
     link: "https://www.forreststudio.co.uk",
-    logo: "/forrest-studio.webp",
+    logo: "/images/forrest-studio.webp",
     id: "work3",
   },
   {
@@ -185,7 +86,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Sep 2025",
     end: "Present",
     link: "",
-    logo: "/bookmark.webp",
+    logo: "/images/bookmark.webp",
     id: "work4",
   },
   {
@@ -194,7 +95,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Jul 2025",
     end: "Sep 2025",
     link: "",
-    logo: "/ba.webp",
+    logo: "/images/ba.webp",
     id: "work5",
   },
   {
@@ -203,7 +104,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Jul 2025",
     end: "Jul 2025",
     link: "",
-    logo: "/bath.webp",
+    logo: "/images/bath.webp",
     id: "work6",
   },
   {
@@ -212,7 +113,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Apr 2025",
     end: "Apr 2025",
     link: "",
-    logo: "/aaib.webp",
+    logo: "/images/aaib.webp",
     id: "work7",
   },
   {
@@ -221,7 +122,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Aug 2024",
     end: "Oct 2024",
     link: "",
-    logo: "/hudjo.webp",
+    logo: "/images/hudjo.webp",
     id: "work8",
   },
   {
@@ -230,7 +131,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Aug 2024",
     end: "Aug 2024",
     link: "",
-    logo: "/virgin.webp",
+    logo: "/images/virgin.webp",
     id: "work9",
   },
   {
@@ -239,7 +140,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: "Jan 2017",
     end: "Jan 2023",
     link: "",
-    logo: "/stmichaels.webp",
+    logo: "/images/stmichaels.webp",
     id: "work10",
   },
 ];
@@ -248,21 +149,21 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 
 export const EDUCATION: Education[] = [
   {
-    school: "St George's College, Weybridge",
+    school: "St George's Weybridge",
     degree: "A Levels: Predicted A*A*AA",
     start: "Sep 2024",
     end: "Jul 2026",
     link: "https://www.stgeorgesweybridge.com",
-    logo: "/st-georges-weybridge.webp",
+    logo: "/images/st-georges-weybridge.webp",
     id: "edu1",
   },
   {
-    school: "St George's College, Weybridge",
+    school: "St George's Weybridge",
     degree: "GCSEs: 9999999987",
     start: "Sep 2021",
     end: "Jul 2024",
     link: "https://www.newlandhouse.net",
-    logo: "/st-georges-weybridge.webp",
+    logo: "/images/st-georges-weybridge.webp",
     id: "edu2",
   },
   {
@@ -271,35 +172,8 @@ export const EDUCATION: Education[] = [
     start: "Sep 2012",
     end: "Jul 2021",
     link: "https://www.stgeorgesweybridge.com",
-    logo: "/newland-house-school.webp",
+    logo: "/images/newland-house-school.webp",
     id: "edu3",
-  },
-];
-
-// BEST BLOG POSTS FROM SUBSTACK
-
-export const BLOG_POSTS: BlogPost[] = [
-  {
-    title:
-      "Why it makes sense that Degree Apprenticeships are gaining popularity.",
-    description:
-      "In this article, I will discuss the recent rise in popularity of degree apprenticeships and examine why they are becoming a compelling alternative to traditional university.",
-    link: "https://samueljforrest.substack.com/p/why-it-makes-sense-that-degree-apprenticeships",
-    uid: "blog-1",
-  },
-  {
-    title: "Diary of a CEO episodes that changed how I think",
-    description:
-      "In this article, I will discuss some of the recent Diary of a CEO Episodes, presented by Steven Bartlett, that have impacted my perspective on AI and entrepreneurialism.",
-    link: "https://samueljforrest.substack.com/p/diary-of-a-ceo-episodes-that-changed",
-    uid: "blog-2",
-  },
-  {
-    title: "Is AI a bubble waiting to burst...",
-    description:
-      "My idea for this article stemmed from the disappointing release of GPT-5, which underwhelmed many in the tech world, in addition to reading MIT’s article.",
-    link: "https://samueljforrest.substack.com/p/is-ai-a-bubble-waiting-to-burst",
-    uid: "blog-3",
   },
 ];
 
@@ -314,12 +188,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: "LinkedIn",
     link: "https://www.linkedin.com/in/samueljforrest/",
   },
+
   {
-    label: "Substack",
-    link: "https://samueljforrest.substack.com/",
-  },
-  {
-    label: "Book call",
+    label: "Book a Call",
     link: "https://calendar.app.google/UGF12VGCT4zaFQFDA",
   },
 ];
