@@ -44,7 +44,7 @@ export default function Personal() {
             Experience
           </h1>
           <h3 className="mb-5 text-lg font-medium">Summary</h3>
-          <p className="text-black dark:text-white">
+          <p className="text-white">
             Samuel Forrest is an A Level student passionate about modern web and
             application development. Currently the CTO at Apprentadream, Private
             Tutor on Superprof and a Freelance Developer.

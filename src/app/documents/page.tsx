@@ -42,7 +42,7 @@ export default function Page() {
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
         Documents
       </h1>
-      <article className="prose prose-quoteless prose-neutral dark:prose-invert">
+      <article className="prose prose-quoteless prose-invert">
         <CustomMDX source={content} />
       </article>
     </section>

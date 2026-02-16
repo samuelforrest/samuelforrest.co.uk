@@ -19,11 +19,11 @@ export function ProjectsGrid() {
         .map((project) => (
           <Link
             key={project.slug}
-            className="group flex flex-col overflow-hidden rounded-lg border border-neutral-200 dark:border-neutral-800 hover:border-neutral-300 dark:hover:border-neutral-700 transition-colors"
+            className="group flex flex-col overflow-hidden rounded-lg border border-neutral-800 hover:border-neutral-700 transition-colors"
             href={`/projects/${project.slug}`}
           >
             {project.metadata.image && (
-              <div className="relative h-48 w-full overflow-hidden bg-neutral-100 dark:bg-neutral-800">
+              <div className="relative h-48 w-full overflow-hidden bg-neutral-800">
                 <Image
                   src={project.metadata.image}
                   alt={project.metadata.title}
@@ -34,13 +34,13 @@ export function ProjectsGrid() {
               </div>
             )}
             <div className="flex flex-col p-4 flex-1">
-              <h2 className="font-semibold text-lg mb-2 text-neutral-900 dark:text-neutral-100 line-clamp-2">
+              <h2 className="font-semibold text-lg mb-2 text-neutral-100 line-clamp-2">
                 {project.metadata.title}
               </h2>
-              <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3 line-clamp-2 flex-1">
+              <p className="text-sm text-neutral-400 mb-3 line-clamp-2 flex-1">
                 {project.metadata.summary}
               </p>
-              <p className="text-xs text-neutral-500 dark:text-neutral-500">
+              <p className="text-xs text-neutral-500">
                 {formatDate(project.metadata.publishedAt, false)}
               </p>
             </div>
