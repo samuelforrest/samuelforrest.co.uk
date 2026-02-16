@@ -11,7 +11,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   let project = getProjects().find((project) => project.slug === slug);
   if (!project) {
@@ -52,7 +56,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   };
 }
 
-export default async function Project({ params }: { params: Promise<{ slug: string }> }) {
+export default async function Project({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
   let project = getProjects().find((project) => project.slug === slug);
 
