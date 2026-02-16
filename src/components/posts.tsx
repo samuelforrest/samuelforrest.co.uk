@@ -40,16 +40,9 @@ export function BlogPosts() {
               <p className="text-sm text-neutral-600 dark:text-neutral-400 mb-3 line-clamp-2 flex-1">
                 {post.metadata.summary}
               </p>
-              <div className="flex flex-col gap-1">
-                {post.metadata.author && (
-                  <p className="text-xs text-neutral-500 dark:text-neutral-500">
-                    By {post.metadata.author}
-                  </p>
-                )}
-                <p className="text-xs text-neutral-500 dark:text-neutral-500">
-                  {formatDate(post.metadata.publishedAt, false)}
-                </p>
-              </div>
+              <p className="text-xs text-neutral-500 dark:text-neutral-500">
+                {formatDate(post.metadata.publishedAt, false)}
+              </p>
             </div>
           </Link>
         ))}

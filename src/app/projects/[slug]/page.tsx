@@ -87,7 +87,7 @@ export default async function Project({
             url: `https://samuelforrest.co.uk/projects/${project.slug}`,
             author: {
               "@type": "Person",
-              name: project.metadata.author || "Samuel Forrest",
+              name: "Samuel Forrest",
             },
           }),
         }}
@@ -95,15 +95,10 @@ export default async function Project({
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {project.metadata.title}
       </h1>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+      <div className="flex mt-2 mb-8 text-sm">
+        <p className="text-sm text-neutral-400">
           {formatDate(project.metadata.publishedAt)}
         </p>
-        {project.metadata.author && (
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            By {project.metadata.author}
-          </p>
-        )}
       </div>
       {project.metadata.image && (
         <div className="relative w-full h-64 mb-8 rounded-lg overflow-hidden">
@@ -116,7 +111,7 @@ export default async function Project({
           />
         </div>
       )}
-      <article className="prose prose-quoteless prose-neutral dark:prose-invert">
+      <article className="prose prose-invert prose-quoteless prose-neutral">
         <CustomMDX source={project.content} />
       </article>
     </section>

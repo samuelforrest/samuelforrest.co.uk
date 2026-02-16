@@ -87,7 +87,7 @@ export default async function Blog({
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: post.metadata.author || "Biology News Weekly",
+              name: "Samuel Forrest",
             },
           }),
         }}
@@ -95,15 +95,10 @@ export default async function Blog({
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {post.metadata.title}
       </h1>
-      <div className="flex flex-col md:flex-row md:justify-between md:items-center mt-2 mb-8 text-sm gap-1">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+      <div className="flex mt-2 mb-8 text-sm">
+        <p className="text-sm text-neutral-400">
           {formatDate(post.metadata.publishedAt)}
         </p>
-        {post.metadata.author && (
-          <p className="text-sm text-neutral-600 dark:text-neutral-400">
-            By <span className="font-medium">{post.metadata.author}</span>
-          </p>
-        )}
       </div>
       {post.metadata.image && (
         <div className="relative w-full h-64 md:h-96 mb-8 rounded-lg overflow-hidden">
@@ -116,7 +111,7 @@ export default async function Blog({
           />
         </div>
       )}
-      <article className="prose">
+      <article className="prose prose-invert prose-quoteless prose-neutral">
         <CustomMDX source={post.content} />
       </article>
     </section>
