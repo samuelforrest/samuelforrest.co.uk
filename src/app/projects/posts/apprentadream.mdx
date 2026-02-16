@@ -5,4 +5,72 @@ summary: "Built a GDPR-compliant sign-up form for Apprentadream, handling over 1
 image: "/images/apprentadream2.webp"
 ---
 
-Project description creation in progress
+## Overview
+
+I recently became the CTO (Chief Technological Officer) of Apprentadream, which is an organisation helping
+people to get into the best apprenticeships in the UK.
+
+Apprentadream currently has a large WhatsApp community, with over 2,000 members, and my first project was to
+create an online sign-up form to help understand the users within our network.
+
+The data we aimed to collect included:
+
+- Contact Information (for mailing list)
+- What types of Apprenticeship levels they were interested in
+- Industries of interest
+- Motivations, current qualificaitons and confidence levels
+
+Therefore, this would allow us to personalise the network more, understand the demographics of our users and
+deliver a better experience for everyone.
+
+## Live Demo
+
+[Apprentadream.co.uk](https://www.apprentadream.co.uk)
+
+[GitHub Source Code](https://github.com/samuelforrest/apprentadream.co.uk)
+
+## Tech Stack
+
+Overall, I used a modern tech stack for this web application, utilising Supabase for a backend database to store user's
+responses securely with accordance to GDPR, and a modern frontend experience with tailwindcss utility classes
+and ShadcnUI-based UI components.
+
+Frontend
+
+- TailwindCSS
+- ShadcnUI
+- MagicUI
+- React
+- Lucide React Icons
+
+Backend
+
+- Next.js
+- Supabase
+- Cloudflare
+- Vercel
+- Google Search Console
+
+## Features
+
+- Two seperate forms (Apprentadream & Company Hub)
+- Client-side and Server-side data verification
+- User referrals
+- SEO optimised for #1 place for query on Google
+- Comprehensive privacy policy in accordance with GDPR
+- Mobile friendly website
+
+## Future Improvements
+
+In the future, I would like to implement a theme toggle as the website is currently only available in dark mode.
+
+I would also like to improve the logic of the referral scheme, and potentially introduce a leaderboard to
+encorage more referrals.
+
+## What I learnt
+
+I initially used Google Sheet's API to connect to the website, however, the loading times were long for
+form submission. Supabase was faster and more maintainable in the long term.
+
+I also learnt a lot about how to keep user's data safe in accordance with GDPR and ensuring we provide
+a way for users to export their data, delete their data or modify their data with a clean terms / privacy policy.
