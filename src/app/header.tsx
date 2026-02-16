@@ -19,10 +19,7 @@ export function Header() {
           />
         </div>
         <div>
-          <Link
-            href="/"
-            className="text-2xl font-medium text-black dark:text-white"
-          >
+          <Link href="/" className="text-2xl font-medium text-white">
             Samuel Forrest
           </Link>
           <TextEffect
