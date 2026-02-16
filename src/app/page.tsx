@@ -261,40 +261,13 @@ export default function Personal() {
             <button
               type="button"
               onClick={() => setShowPrimaryEmail(true)}
-              className="underline underline-offset-3 dark:text-zinc-300"
+              className="cursor-pointer underline underline-offset-3 dark:text-zinc-300"
             >
               reveal email
             </button>
           )}
         </p>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          My previous email is still active for a limited period{" "}
-          {showSecondaryEmail ? (
-            <a
-              className="underline underline-offset-3 dark:text-zinc-300"
-              href="mailto:sam@samuelforrest.me"
-            >
-              sam@samuelforrest.me
-            </a>
-          ) : (
-            <button
-              type="button"
-              onClick={() => setShowSecondaryEmail(true)}
-              className="underline underline-offset-3 dark:text-zinc-300"
-            >
-              reveal email
-            </button>
-          )}
-        </p>
-        <p className="mb-5 text-zinc-600 dark:text-zinc-400">
-          Feel free to message me on&nbsp;
-          <a
-            className="underline underline-offset-3 dark:text-zinc-300"
-            href="https://www.linkedin.com/in/samueljforrest"
-          >
-            LinkedIn
-          </a>
-        </p>
+
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <a
