@@ -40,7 +40,7 @@ export function Navbar() {
               href="https://github.com/samuelforrest"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white "
+              className="text-white hover:text-neutral-300 transition-colors "
             >
               <FaGithub className="h-5 w-5" />
             </a>
@@ -48,7 +48,7 @@ export function Navbar() {
               href="https://www.youtube.com/@samuel-forrest"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-red-500"
+              className="text-red-500 hover:text-red-600 transition-colors"
             >
               <FaYoutube className="h-5 w-5 " />
             </a>
@@ -56,7 +56,7 @@ export function Navbar() {
               href="https://www.linkedin.com/in/samueljforrest/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500"
+              className="text-blue-500 hover:text-blue-600 transition-colors"
             >
               <FaLinkedin className="h-5 w-5" />
             </a>
