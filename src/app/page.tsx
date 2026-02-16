@@ -20,7 +20,7 @@ export default function Personal() {
     <main className="space-y-24">
       <section>
         <div className="flex-1">
-          <h1 className="font-semibold text-2xl mb-8 tracking-tighter">
+          <h1 className="font-semibold text-2xl mb-10 tracking-tighter">
             Experience
           </h1>
           <h3 className="mb-5 text-lg font-medium">Summary</h3>

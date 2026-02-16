@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaLinkedin, FaGithub, FaYoutube, FaGoogle } from "react-icons/fa";
+import { SOCIAL_LINKS } from "src/app/data";
 
 const navItems = {
   "/": {
@@ -44,7 +45,7 @@ export function Navbar() {
               <FaGithub className="h-5 w-5" />
             </a>
             <a
-              href="https://github.com/samuelforrest"
+              href="https://www.youtube.com/@samuel-forrest"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500"
