@@ -174,7 +174,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
-// Tech Stack
+// TECH STACK
 
 export const TECH_STACK: TechStack[] = [
   {
