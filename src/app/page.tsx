@@ -68,7 +68,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
+          <p className="text-black dark:text-white">
             Samuel Forrest is an A Level student passionate about modern web and
             application development. Currently the CTO at Apprentadream, Private
             Tutor on Superprof and a Freelance Developer.

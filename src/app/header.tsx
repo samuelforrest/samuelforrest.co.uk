@@ -2,10 +2,12 @@
 import { TextEffect } from "src/components/ui/text-effect";
 import Link from "next/link";
 import Image from "next/image";
+import { Navbar } from "src/components/nav";
 
 export function Header() {
   return (
-    <header className="mb-8 flex items-center justify-between">
+    <header className="mb-8">
+      <Navbar />
       <div className="flex items-center gap-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
           <Image
@@ -27,7 +29,7 @@ export function Header() {
             as="p"
             preset="fade"
             per="char"
-            className="text-zinc-600 dark:text-zinc-500"
+            className="text-black dark:text-white"
             delay={0.5}
           >
             Student, Developer & Tutor
