@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "404: Page Not Found | Samuel Forrest",
+  description: "This page could not be found.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
 export default function NotFound() {
   return (
     <div className="flex flex-col mt-20 ">

@@ -33,6 +33,9 @@ export async function generateMetadata({
   return {
     title,
     description,
+    alternates: {
+      canonical: `/blog/${post.slug}`,
+    },
     openGraph: {
       title,
       description,
@@ -74,22 +77,67 @@ export default async function Blog({
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
-            ...(post.metadata.image && {
-              image: `${baseUrl}${post.metadata.image}`,
-            }),
-            url: `${baseUrl}/blog/${post.slug}`,
-            author: {
-              "@type": "Person",
-              name: "Samuel Forrest",
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": `${baseUrl}/blog/${post.slug}`,
+              },
+              headline: post.metadata.title,
+              datePublished: post.metadata.publishedAt,
+              dateModified: post.metadata.publishedAt,
+              description: post.metadata.summary,
+              ...(post.metadata.image && {
+                image: {
+                  "@type": "ImageObject",
+                  url: post.metadata.image,
+                  width: 1200,
+                  height: 630,
+                },
+              }),
+              url: `${baseUrl}/blog/${post.slug}`,
+              author: {
+                "@type": "Person",
+                name: "Samuel Forrest",
+                url: `${baseUrl}`,
+                sameAs: [
+                  "https://github.com/samuelforrest",
+                  "https://www.linkedin.com/in/samueljforrest/",
+                  "https://www.youtube.com/@samuelforrest",
+                ],
+              },
+              publisher: {
+                "@type": "Person",
+                name: "Samuel Forrest",
+                url: `${baseUrl}`,
+              },
             },
-          }),
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: `${baseUrl}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Blog",
+                  item: `${baseUrl}/blog`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: post.metadata.title,
+                },
+              ],
+            },
+          ]),
         }}
       />
       <a id="top"></a>

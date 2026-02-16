@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { CustomMDX } from "src/components/mdx";
 import { formatDate, getProjects } from "../utils";
 import Image from "next/image";
+import { baseUrl } from "src/app/sitemap";
 
 export async function generateStaticParams() {
   let projects = getProjects();
@@ -30,17 +31,20 @@ export async function generateMetadata({
   } = project.metadata;
   let ogImage = image
     ? image
-    : `https://samuelforrest.co.uk/og?title=${encodeURIComponent(title)}`;
+    : `${baseUrl}/og?title=${encodeURIComponent(title)}`;
 
   return {
     title,
     description,
+    alternates: {
+      canonical: `/projects/${project.slug}`,
+    },
     openGraph: {
       title,
       description,
       type: "article",
       publishedTime,
-      url: `https://samuelforrest.co.uk/projects/${project.slug}`,
+      url: `${baseUrl}/projects/${project.slug}`,
       images: [
         {
           url: ogImage,
@@ -74,22 +78,67 @@ export default async function Project({
         type="application/ld+json"
         suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: project.metadata.title,
-            datePublished: project.metadata.publishedAt,
-            dateModified: project.metadata.publishedAt,
-            description: project.metadata.summary,
-            image: project.metadata.image
-              ? `https://samuelforrest.co.uk${project.metadata.image}`
-              : `/og?title=${encodeURIComponent(project.metadata.title)}`,
-            url: `https://samuelforrest.co.uk/projects/${project.slug}`,
-            author: {
-              "@type": "Person",
-              name: "Samuel Forrest",
+          __html: JSON.stringify([
+            {
+              "@context": "https://schema.org",
+              "@type": "CreativeWork",
+              mainEntityOfPage: {
+                "@type": "WebPage",
+                "@id": `${baseUrl}/projects/${project.slug}`,
+              },
+              headline: project.metadata.title,
+              datePublished: project.metadata.publishedAt,
+              dateModified: project.metadata.publishedAt,
+              description: project.metadata.summary,
+              image: {
+                "@type": "ImageObject",
+                url: project.metadata.image
+                  ? project.metadata.image
+                  : `${baseUrl}/og?title=${encodeURIComponent(project.metadata.title)}`,
+                width: 1200,
+                height: 630,
+              },
+              url: `${baseUrl}/projects/${project.slug}`,
+              author: {
+                "@type": "Person",
+                name: "Samuel Forrest",
+                url: `${baseUrl}`,
+                sameAs: [
+                  "https://github.com/samuelforrest",
+                  "https://www.linkedin.com/in/samueljforrest/",
+                  "https://www.youtube.com/@samuelforrest",
+                ],
+              },
+              publisher: {
+                "@type": "Person",
+                name: "Samuel Forrest",
+                url: `${baseUrl}`,
+              },
             },
-          }),
+            {
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: `${baseUrl}`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Projects",
+                  item: `${baseUrl}/projects`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: project.metadata.title,
+                },
+              ],
+            },
+          ]),
         }}
       />
       <a id="top"></a>

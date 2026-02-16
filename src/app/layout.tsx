@@ -109,40 +109,55 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://www.samuelforrest.co.uk" />
-        <meta name="color-scheme" content="light dark" />
+        <meta name="apple-mobile-web-app-title" content="Samuel Forrest" />
+        <meta name="color-scheme" content="dark" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Person",
-              name: "Samuel Forrest",
-              url: "https://www.samuelforrest.co.uk",
-              image:
-                "https://www.samuelforrest.co.uk/samuel-forrest-october-2025.webp",
-              jobTitle: "Software Developer & A-Level Student",
-              description:
-                "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
-              alumniOf: "St George's Weybridge",
-              knowsAbout: [
-                "Software Engineering",
-                "Web Development",
-                "Computer Science",
-                "Mathematics",
-                "Physics",
-                "Private Tutoring",
-              ],
-              sameAs: [
-                "https://linkedin.com/in/samueljforrest",
-                "https://github.com/samuelforrest",
-              ],
-              address: {
-                "@type": "Place",
-                addressLocality: "London",
-                addressCountry: "UK",
+            __html: JSON.stringify([
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                name: "Samuel Forrest",
+                url: "https://www.samuelforrest.co.uk",
+                image:
+                  "https://www.samuelforrest.co.uk/samuel-forrest-october-2025.webp",
+                jobTitle: "Software Developer & A-Level Student",
+                description:
+                  "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
+                alumniOf: "St George's Weybridge",
+                knowsAbout: [
+                  "Software Engineering",
+                  "Web Development",
+                  "Computer Science",
+                  "Mathematics",
+                  "Physics",
+                  "Private Tutoring",
+                ],
+                sameAs: [
+                  "https://www.linkedin.com/in/samueljforrest/",
+                  "https://github.com/samuelforrest",
+                  "https://www.youtube.com/@samuelforrest",
+                ],
+                address: {
+                  "@type": "Place",
+                  addressLocality: "London",
+                  addressCountry: "UK",
+                },
               },
-            }),
+              {
+                "@context": "https://schema.org",
+                "@type": "WebSite",
+                name: "Samuel Forrest",
+                url: "https://www.samuelforrest.co.uk",
+                description:
+                  "Samuel Forrest is an A Level student passionate about modern web and application development. Currently the CTO at Apprentadream, Private Tutor on Superprof and a Freelance Developer.",
+                author: {
+                  "@type": "Person",
+                  name: "Samuel Forrest",
+                },
+              },
+            ]),
           }}
         />
       </head>
