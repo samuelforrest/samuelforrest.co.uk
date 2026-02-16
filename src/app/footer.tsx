@@ -9,7 +9,7 @@ export function Footer() {
         <a href="https://github.com/ibelick/nim" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© 2026 Samuel Forrest</span>
-            <span>Accurate as of 12/01/25</span>
+            <span>Accurate as of 16/02/25</span>
           </TextLoop>
         </a>
       </div>

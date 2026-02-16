@@ -11,7 +11,7 @@ export function Header() {
       <div className="flex items-center gap-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden shrink-0">
           <Image
-            src="/samuelforrest.JPG"
+            src="/images/samuelforrest.webp"
             alt="Samuel Forrest"
             fill
             className="object-cover"

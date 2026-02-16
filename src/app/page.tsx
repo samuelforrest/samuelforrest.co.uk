@@ -13,13 +13,7 @@ import {
 
 import Link from "next/link";
 import { AnimatedBackground } from "src/components/ui/animated-background";
-import {
-  WORK_EXPERIENCE,
-  EDUCATION,
-  BLOG_POSTS,
-  SOCIAL_LINKS,
-  TECH_STACK,
-} from "./data";
+import { WORK_EXPERIENCE, EDUCATION, SOCIAL_LINKS, TECH_STACK } from "./data";
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
