@@ -1,8 +1,5 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
-
 type Education = {
   school: string;
   degree: string;
@@ -14,18 +11,12 @@ type Education = {
 };
 
 export function EducationGrid({ education }: { education: Education[] }) {
-  const [showMore, setShowMore] = useState(false);
-  const displayed = showMore ? education : education.slice(0, 2);
-
   return (
     <>
       <div className="flex flex-col space-y-2">
-        {displayed.map((edu) => (
-          <a
+        {education.map((edu) => (
+          <div
             className="relative overflow-hidden rounded-2xl  p-px bg-zinc-600/30"
-            href={edu.link}
-            target="_blank"
-            rel="noopener noreferrer"
             key={edu.id}
           >
             <div className="relative h-full w-full rounded-[15px] p-3 bg-zinc-950">
@@ -50,22 +41,9 @@ export function EducationGrid({ education }: { education: Education[] }) {
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
-      {education.length > 2 && (
-        <div className="mt-3 flex justify-center">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="flex cursor-pointer items-center gap-2 text-sm font-medium text-zinc-400 transition-colors hover:text-zinc-100"
-          >
-            {showMore ? "Show Less" : "Show More"}
-            <ChevronDown
-              className={`h-4 w-4 transition-transform ${showMore ? "rotate-180" : ""}`}
-            />
-          </button>
-        </div>
-      )}
     </>
   );
 }

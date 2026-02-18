@@ -18,18 +18,12 @@ export function WorkExperienceGrid({
 }: {
   experiences: WorkExperience[];
 }) {
-  const [showMore, setShowMore] = useState(false);
-  const displayed = showMore ? experiences : experiences.slice(0, 3);
-
   return (
     <>
       <div className="flex flex-col space-y-2">
-        {displayed.map((job) => (
-          <a
-            className="relative overflow-hidden rounded-2xl p-px bg-zinc-600/30"
-            href={job.link}
-            target="_blank"
-            rel="noopener noreferrer"
+        {experiences.map((job) => (
+          <div
+            className="relative overflow-hidden rounded-2xl  p-px bg-zinc-600/30"
             key={job.id}
           >
             <div className="relative h-full w-full rounded-[15px] p-3 bg-zinc-950">
@@ -54,22 +48,9 @@ export function WorkExperienceGrid({
                 </div>
               </div>
             </div>
-          </a>
+          </div>
         ))}
       </div>
-      {experiences.length > 3 && (
-        <div className="mt-3 flex justify-center">
-          <button
-            onClick={() => setShowMore(!showMore)}
-            className="flex cursor-pointer items-center gap-2 text-sm font-medium  transition-colors text-zinc-400 hover:text-zinc-100"
-          >
-            {showMore ? "Show Less" : "Show More"}
-            <ChevronDown
-              className={`h-4 w-4 transition-transform ${showMore ? "rotate-180" : ""}`}
-            />
-          </button>
-        </div>
-      )}
     </>
   );
 }
