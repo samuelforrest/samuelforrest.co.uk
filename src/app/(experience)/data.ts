@@ -130,7 +130,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const EDUCATION: Education[] = [
   {
     school: "St George's Weybridge",
-    degree: "A Levels: Predicted A*A*AA",
+    degree: "A Level - Predicted A*A*AA",
     start: "Sep 2024",
     end: "Jul 2026",
     link: "https://www.stgeorgesweybridge.com",
@@ -139,21 +139,12 @@ export const EDUCATION: Education[] = [
   },
   {
     school: "St George's Weybridge",
-    degree: "GCSEs: 9999999987",
+    degree: "GCSE -  9999999987",
     start: "Sep 2021",
     end: "Jul 2024",
     link: "https://www.newlandhouse.net",
     logo: "/images/st-georges-weybridge.webp",
     id: "edu2",
-  },
-  {
-    school: "Newland House School",
-    degree: "KS3",
-    start: "Sep 2012",
-    end: "Jul 2021",
-    link: "https://www.stgeorgesweybridge.com",
-    logo: "/images/newland-house-school.webp",
-    id: "edu3",
   },
 ];
 
