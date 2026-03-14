@@ -13,9 +13,9 @@ export function ConnectSection() {
         {showPrimaryEmail ? (
           <a
             className="underline underline-offset-3 text-zinc-300"
-            href="mailto:sam@samuelforrest.co.uk"
+            href="mailto:samuel@samuelforrest.co.uk"
           >
-            sam@samuelforrest.co.uk
+            samuel@samuelforrest.co.uk
           </a>
         ) : (
           <button
